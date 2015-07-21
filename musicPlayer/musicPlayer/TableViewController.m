@@ -6,13 +6,13 @@
 //  Copyright (c) 2015年 cn.coohua. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "TableViewController.h"
 #import "MPController.h"
-@interface ViewController ()
+@interface TableViewController ()
 
 @end
 
-@implementation ViewController
+@implementation TableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -31,7 +31,8 @@
     return 1;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    UITableViewCell *cell = [[UITableViewCell alloc] init];
     cell.textLabel.text = @"温柔";
     
     return cell;
