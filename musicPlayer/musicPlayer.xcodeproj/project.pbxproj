@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39621FA91B5E41B000C0E278 /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39621FA81B5E41B000C0E278 /* MusicViewController.m */; };
 		39FAE3F71B4FC558000506CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39FAE3F61B4FC558000506CC /* main.m */; };
 		39FAE3FA1B4FC558000506CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39FAE3F91B4FC558000506CC /* AppDelegate.m */; };
 		39FAE3FD1B4FC558000506CC /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39FAE3FC1B4FC558000506CC /* TableViewController.m */; };
@@ -15,6 +16,7 @@
 		39FAE4111B4FC558000506CC /* musicPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39FAE4101B4FC558000506CC /* musicPlayerTests.m */; };
 		39FAE41D1B4FC7BF000506CC /* MPController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39FAE41C1B4FC7BF000506CC /* MPController.m */; };
 		39FAE41F1B4FCDB3000506CC /* 梁静茹 - 温柔.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 39FAE41E1B4FCDB3000506CC /* 梁静茹 - 温柔.mp3 */; };
+		9333D3331471E9EF872589C9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A1CC50ABDAE2C04DB80363 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		39621FA71B5E41B000C0E278 /* MusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicViewController.h; sourceTree = "<group>"; };
+		39621FA81B5E41B000C0E278 /* MusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicViewController.m; sourceTree = "<group>"; };
 		39FAE3F11B4FC558000506CC /* musicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = musicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39FAE3F51B4FC558000506CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39FAE3F61B4FC558000506CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -43,6 +47,9 @@
 		39FAE41B1B4FC7BF000506CC /* MPController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPController.h; sourceTree = "<group>"; };
 		39FAE41C1B4FC7BF000506CC /* MPController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPController.m; sourceTree = "<group>"; };
 		39FAE41E1B4FCDB3000506CC /* 梁静茹 - 温柔.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "梁静茹 - 温柔.mp3"; sourceTree = "<group>"; };
+		45A1CC50ABDAE2C04DB80363 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBE5EC97E6F11856C09D1C5E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E30D344F9480EE9CA621AB0C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9333D3331471E9EF872589C9 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,12 +71,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E4353F1724E45E30CD4210E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBE5EC97E6F11856C09D1C5E /* Pods.debug.xcconfig */,
+				E30D344F9480EE9CA621AB0C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2AB55AB0886F15B6D579B2BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45A1CC50ABDAE2C04DB80363 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		39FAE3E81B4FC558000506CC = {
 			isa = PBXGroup;
 			children = (
 				39FAE3F31B4FC558000506CC /* musicPlayer */,
 				39FAE40D1B4FC558000506CC /* musicPlayerTests */,
 				39FAE3F21B4FC558000506CC /* Products */,
+				1E4353F1724E45E30CD4210E /* Pods */,
+				2AB55AB0886F15B6D579B2BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +115,8 @@
 				39FAE3F91B4FC558000506CC /* AppDelegate.m */,
 				39FAE3FB1B4FC558000506CC /* TableViewController.h */,
 				39FAE3FC1B4FC558000506CC /* TableViewController.m */,
+				39621FA71B5E41B000C0E278 /* MusicViewController.h */,
+				39621FA81B5E41B000C0E278 /* MusicViewController.m */,
 				39FAE41A1B4FC744000506CC /* MPController */,
 				39FAE4011B4FC558000506CC /* Images.xcassets */,
 				39FAE4031B4FC558000506CC /* LaunchScreen.xib */,
@@ -139,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39FAE4141B4FC558000506CC /* Build configuration list for PBXNativeTarget "musicPlayer" */;
 			buildPhases = (
+				96F91992BE657F29C0C6DDDF /* Check Pods Manifest.lock */,
 				39FAE3ED1B4FC558000506CC /* Sources */,
 				39FAE3EE1B4FC558000506CC /* Frameworks */,
 				39FAE3EF1B4FC558000506CC /* Resources */,
+				73B90CF15F8E905412832652 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,12 +258,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		73B90CF15F8E905412832652 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96F91992BE657F29C0C6DDDF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		39FAE3ED1B4FC558000506CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				39FAE3FD1B4FC558000506CC /* TableViewController.m in Sources */,
+				39621FA91B5E41B000C0E278 /* MusicViewController.m in Sources */,
 				39FAE3FA1B4FC558000506CC /* AppDelegate.m in Sources */,
 				39FAE41D1B4FC7BF000506CC /* MPController.m in Sources */,
 				39FAE3F71B4FC558000506CC /* main.m in Sources */,
@@ -353,6 +418,7 @@
 		};
 		39FAE4151B4FC558000506CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBE5EC97E6F11856C09D1C5E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = musicPlayer/Info.plist;
@@ -363,6 +429,7 @@
 		};
 		39FAE4161B4FC558000506CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E30D344F9480EE9CA621AB0C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = musicPlayer/Info.plist;

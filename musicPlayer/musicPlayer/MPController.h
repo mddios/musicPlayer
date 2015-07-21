@@ -11,4 +11,5 @@
 @interface MPController : NSObject
 + (instancetype)sharedMP;
 - (void)startAudioPlay;
+- (void)stopAudioPlay;
 @end
