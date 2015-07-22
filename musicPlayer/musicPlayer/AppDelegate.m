@@ -14,7 +14,36 @@
 
 @implementation AppDelegate
 
-
+/// 1.成为第一响应者
+- (BOOL)canBecomeFirstResponder {
+    return YES;
+}
+/// 3.事件处理函数
+- (void)remoteControlReceivedWithEvent:(UIEvent *)event {
+    switch (event.subtype) {
+        case UIEventSubtypeRemoteControlPause:
+            NSLog(@"暂停");
+            break;
+        case UIEventSubtypeRemoteControlPlay:
+            NSLog(@"播放");
+            break;
+        case UIEventSubtypeRemoteControlNextTrack:
+        {
+            NSLog(@"下一个任务"); // 下一首歌
+            
+            //            UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"test" delegate:self cancelButtonTitle:@"cancel" destructiveButtonTitle:@"hello" otherButtonTitles:nil];
+            //
+            //            [sheet showInView:self.window];
+            //            self.sheet = sheet;
+            break;
+        }
+        case UIEventSubtypeRemoteControlPreviousTrack:
+            NSLog(@"上一个任务"); // 上一首歌
+            break;
+        default:
+            break;
+    }
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     // 根控制器为导航控制器
@@ -26,6 +55,9 @@
     self.window.rootViewController = naVC;
     
     [self.window makeKeyAndVisible];
+    
+    // 2.一般播放音乐后调用，这里为了方便测试直接调用
+    [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
     return YES;
 }
 

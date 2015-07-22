@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		39621FA91B5E41B000C0E278 /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39621FA81B5E41B000C0E278 /* MusicViewController.m */; };
+		39EE63F91B5F4B9900ED2E29 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39EE63F81B5F4B9900ED2E29 /* MediaPlayer.framework */; };
+		39EE63FB1B5F4BC500ED2E29 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39EE63FA1B5F4BC500ED2E29 /* AVFoundation.framework */; };
 		39FAE3F71B4FC558000506CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39FAE3F61B4FC558000506CC /* main.m */; };
 		39FAE3FA1B4FC558000506CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39FAE3F91B4FC558000506CC /* AppDelegate.m */; };
 		39FAE3FD1B4FC558000506CC /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39FAE3FC1B4FC558000506CC /* TableViewController.m */; };
@@ -32,6 +34,8 @@
 /* Begin PBXFileReference section */
 		39621FA71B5E41B000C0E278 /* MusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicViewController.h; sourceTree = "<group>"; };
 		39621FA81B5E41B000C0E278 /* MusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicViewController.m; sourceTree = "<group>"; };
+		39EE63F81B5F4B9900ED2E29 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		39EE63FA1B5F4BC500ED2E29 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		39FAE3F11B4FC558000506CC /* musicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = musicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39FAE3F51B4FC558000506CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39FAE3F61B4FC558000506CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -57,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39EE63FB1B5F4BC500ED2E29 /* AVFoundation.framework in Frameworks */,
+				39EE63F91B5F4B9900ED2E29 /* MediaPlayer.framework in Frameworks */,
 				9333D3331471E9EF872589C9 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +89,8 @@
 		2AB55AB0886F15B6D579B2BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				39EE63FA1B5F4BC500ED2E29 /* AVFoundation.framework */,
+				39EE63F81B5F4B9900ED2E29 /* MediaPlayer.framework */,
 				45A1CC50ABDAE2C04DB80363 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -212,6 +220,11 @@
 				TargetAttributes = {
 					39FAE3F01B4FC558000506CC = {
 						CreatedOnToolsVersion = 6.3.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					39FAE4091B4FC558000506CC = {
 						CreatedOnToolsVersion = 6.3.1;
