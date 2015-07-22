@@ -94,7 +94,7 @@
     [nextTrackCommand setEnabled:YES];
     [nextTrackCommand addTarget:self action:@selector(skipBackwardEvent:)];
     
-    // 暂停按钮 togglePlayPauseCommand
+    // 暂停按钮
     MPRemoteCommand *pauseCommand = [rcc pauseCommand];
     [pauseCommand setEnabled:YES];
     [pauseCommand addTarget:self action:@selector(playOrPauseEvent)];
